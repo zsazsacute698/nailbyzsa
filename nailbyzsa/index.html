@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nailbyzsa — Nail Art Aesthetic</title>
+  <meta name="description" content="Nailbyzsa: toko nail art aesthetic dengan desain gen Z, booking mudah, dan testimoni pelanggan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="header" role="banner">
+    <div class="brand">
+      <img src="assets/img/logo.svg" alt="Logo Nailbyzsa" class="logo" />
+      <span class="brand-text">Nailbyzsa</span>
+    </div>
+    <nav class="nav" role="navigation" aria-label="Navigasi utama">
+      <a href="#products">Produk</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#kontak">Kontak</a>
+      <button class="cart-btn" id="openCart" aria-label="Buka keranjang">
+        <img src="assets/icons/cart.svg" alt="" aria-hidden="true"/>
+        <span id="cartCount" class="badge">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Nail Art yang <span>Glow</span> & <span>Chic</span></h1>
+      <p>Nailbyzsa hadir dengan desain kuku aesthetic ala Gen Z. Kamu tinggal pilih, kami yang bikin cantik.</p>
+      <a class="cta" href="#products">Lihat Produk Terlaris</a>
+    </div>
+  </section>
+
+  <!-- Slider Produk -->
+  <section id="products" class="slider-section" aria-labelledby="products-title">
+    <h2 id="products-title">Produk Terlaris</h2>
+
+    <div class="slider-container">
+      <button class="slider-btn prev" aria-label="Sebelumnya">&#10094;</button>
+      <div class="slider" id="slider" aria-live="polite">
+        <!-- Card 1 -->
+        <article class="slide card">
+          <img src="assets/img/slider1.svg" alt="Press-on nails motif pastel" />
+          <div class="card-body">
+            <h3>Press-on Pastel Set</h3>
+            <p class="price">Rp 79.000</p>
+            <div class="actions">
+              <button class="btn secondary like" aria-label="Suka produk">
+                <img src="assets/icons/heart.svg" alt="" aria-hidden="true" />Suka
+              </button>
+              <button class="btn add-to-cart" data-id="p1" data-name="Press-on Pastel Set" data-price="79000">Tambah ke Keranjang</button>
+            </div>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="slide card">
+          <img src="assets/img/slider2.svg" alt="Gel polish burgundy elegan" />
+          <div class="card-body">
+            <h3>Gel Polish Burgundy</h3>
+            <p class="price">Rp 59.000</p>
+            <div class="actions">
+              <button class="btn secondary like"><img src="assets/icons/heart.svg" alt="" aria-hidden="true" />Suka</button>
+              <button class="btn add-to-cart" data-id="p2" data-name="Gel Polish Burgundy" data-price="59000">Tambah ke Keranjang</button>
+            </div>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="slide card">
+          <img src="assets/img/slider3.svg" alt="Sticker nail art lilac lucu" />
+          <div class="card-body">
+            <h3>Sticker Art Lilac</h3>
+            <p class="price">Rp 25.000</p>
+            <div class="actions">
+              <button class="btn secondary like"><img src="assets/icons/heart.svg" alt="" aria-hidden="true" />Suka</button>
+              <button class="btn add-to-cart" data-id="p3" data-name="Sticker Art Lilac" data-price="25000">Tambah ke Keranjang</button>
+            </div>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="slide card">
+          <img src="assets/img/slider4.svg" alt="Cuticle oil aroma vanilla" />
+          <div class="card-body">
+            <h3>Cuticle Oil Vanilla</h3>
+            <p class="price">Rp 39.000</p>
+            <div class="actions">
+              <button class="btn secondary like"><img src="assets/icons/heart.svg" alt="" aria-hidden="true" />Suka</button>
+              <button class="btn add-to-cart" data-id="p4" data-name="Cuticle Oil Vanilla" data-price="39000">Tambah ke Keranjang</button>
+            </div>
+          </div>
+        </article>
+        <!-- Card 5 -->
+        <article class="slide card">
+          <img src="assets/img/slider5.svg" alt="Top coat glossy tahan lama" />
+          <div class="card-body">
+            <h3>Top Coat Glossy</h3>
+            <p class="price">Rp 49.000</p>
+            <div class="actions">
+              <button class="btn secondary like"><img src="assets/icons/heart.svg" alt="" aria-hidden="true" />Suka</button>
+              <button class="btn add-to-cart" data-id="p5" data-name="Top Coat Glossy" data-price="49000">Tambah ke Keranjang</button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <button class="slider-btn next" aria-label="Berikutnya">&#10095;</button>
+    </div>
+
+    <div class="checkout-wrap">
+      <button id="checkoutBtn" class="btn checkout">
+        <img src="assets/icons/cart.svg" alt="" aria-hidden="true" />
+        Checkout
+      </button>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimoni" class="testimoni-section" aria-labelledby="testimoni-title">
+    <h2 id="testimoni-title">Testimoni Pelanggan</h2>
+    <div id="testimoniList" class="testimoni-list" role="list"></div>
+
+    <h3>Kritik &amp; Saran</h3>
+    <form id="testimoniForm" class="testi-form" autocomplete="on">
+      <div class="grid">
+        <input type="text" id="nama" name="nama" placeholder="Nama Anda" required aria-label="Nama" />
+        <input type="email" id="email" name="email" placeholder="Email (opsional)" aria-label="Email" />
+      </div>
+      <textarea id="pesan" name="pesan" placeholder="Tulis testimoni..." required aria-label="Testimoni"></textarea>
+      <div class="rating" aria-label="Rating bintang">
+        <img src="assets/icons/star.svg" alt="1 bintang" data-val="1">
+        <img src="assets/icons/star.svg" alt="2 bintang" data-val="2">
+        <img src="assets/icons/star.svg" alt="3 bintang" data-val="3">
+        <img src="assets/icons/star.svg" alt="4 bintang" data-val="4">
+        <img src="assets/icons/star.svg" alt="5 bintang" data-val="5">
+      </div>
+      <button type="submit" class="btn">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Keranjang Modal -->
+  <div id="cartModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="cartTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="cartTitle">Keranjang Belanja</h3>
+        <button id="closeCart" class="close" aria-label="Tutup">×</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="modal-footer">
+        <div class="total">Total: <span id="cartTotal">Rp 0</span></div>
+        <button id="proceedCheckout" class="btn checkout">Lanjutkan Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="kontak" class="footer">
+    <div class="footer-inner">
+      <p><strong>Alamat Toko:</strong> Jln. Sukses No.1</p>
+      <p>&copy; <span id="year"></span> Nailbyzsa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
+</html>
